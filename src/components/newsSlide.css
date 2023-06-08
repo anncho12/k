@@ -1,0 +1,6 @@
+.slick-prev:before,
+.slick-next:before {
+font-size: smaller!important;
+  color: red!important;
+  top: -55px!important;
+}
