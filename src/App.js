@@ -11,10 +11,10 @@ import CareerPage from "./route/career";
 function App() {
   return (
     
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route exact path="/" element={<Home/>}>
-          <Route path="/main" element={<MainPage/>}/>
+          <Route path="/" element={<MainPage/>}/>
           <Route path="/resume" element={<ResumePage/>}/>
           <Route path="/aipass" element={<AipassPage/>}/>
           <Route path="/career" element={<CareerPage/>}/>
